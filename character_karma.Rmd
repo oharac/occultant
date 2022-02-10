@@ -1,0 +1,262 @@
+---
+title: "determine character karma"
+author: "Casey O'Hara"
+date: "2/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+oharac::setup()
+library(tidyverse)
+library(tidytext)
+library(xkcd)
+library(cowplot)
+library(magick)
+library(showtext)
+font_add(family = 'hobbit', regular = '/Library/Fonts/hobbitonbrushhand.ttf')
+showtext_auto()
+```
+
+### Process reports
+
+Here we process reports by identifying specific character names in each sentence to account for character-specific sentiment analysis.  We'll examine over general storylines (across all chapters) and chapter-by-chapter karmic balance.
+
+As for the overall team karma, using `afinn` lexicon, score each report over time using a cumulative sum.  The reports all trend downward using raw scores, indicating an overall negative tone.  To help account for this, there is a `pos_adj` parameter that calculates the ratio of `abs(sum(neg) / sum(pos))`.  Multiplying the positive scores by (some fraction of) this parameter helps boost those scores in relation to negative scores.
+
+```{r}
+fs <- list.files('reports', full.names = TRUE)
+
+rpts <- lapply(fs, FUN = function(f) {
+  ### f <- fs[1]
+  ftype <- str_extract(f, '\\..+')
+  x <- switch(ftype, 
+              .txt = scan(f, what = 'character'),
+              .rtf = textreadr::read_rtf(f))
+  y <- data.frame(txt = x)
+}) %>%
+  setNames(basename(fs)) %>%
+  bind_rows(.id = 'chapter') %>%
+  group_by(chapter) %>%
+  summarize(txt = paste(txt, sep = ' ', collapse = ' '))
+
+char_names <- tribble(
+  ~text, ~char,
+  'chibo', 'chibo',
+  'rinoa', 'rinoa',
+  'ev', 'evertonette',
+  'evertonette', 'evertonette',
+  'vandare', 'vandare',
+  'artien', 'artien',
+  'rook', 'rook',
+  'tertius', 'rook',
+  'dane', 'dane',
+  'ordinance', 'dane',
+  'xotl', 'xotl')
+
+char_search <- paste0(char_names$text, collapse = '|')
+rpts_tidy <- rpts %>%
+  unnest_tokens(sentence, txt, token = 'sentences') %>%
+  ### unnest to words for character name match in sentence
+  unnest_tokens(word, sentence, token = 'words', drop = FALSE) %>%
+  inner_join(char_names, by = c('word' = 'text')) %>%
+  ### drop word column and re-unnest_tokens to word, keeping char names
+  select(-word) %>%
+  unnest_tokens(word, sentence, 'words', drop = FALSE) %>%
+  distinct() %>%
+  group_by(chapter, char) %>%
+  mutate(word_num = 1:n(),
+         tot_words = n(),
+         ch_num = str_extract(chapter, '[0-9]+') %>% as.numeric(),
+         ch_num = ifelse(str_detect(chapter, '11b'), 11.5, ch_num)) %>%
+  ungroup()
+
+zeros <- rpts_tidy %>%
+  group_by(chapter, ch_num, char) %>%
+  slice(1) %>%
+  mutate(word_num = 0, value = 0)
+
+rpts_scored <- rpts_tidy %>%
+  anti_join(stop_words) %>%
+  inner_join(get_sentiments('afinn'))
+
+### calculate a scaling factor for positive scores - 
+### half the scale necessary to achieve parity of scores
+v <- rpts_scored$value
+# summary(v)
+# mean(v); sd(v)
+pos_adj <- 0.7 * abs(sum(v[v<0]) / sum(v[v>0]))
+
+rpts_summed <- rpts_scored %>%
+  mutate(value = ifelse(value > 0, value * pos_adj, value)) %>%
+  bind_rows(zeros) %>%
+  group_by(chapter, char) %>%
+  arrange(chapter, word_num) %>%
+  mutate(sum_sent = cumsum(value),
+         wds_norm = word_num / max(word_num, na.rm = TRUE)) %>%
+  filter(!is.nan(wds_norm)) %>%
+  mutate(sum_length_adj = sum_sent / tot_words) %>%
+  ungroup() %>%
+  mutate(sum_norm = sum_length_adj / max(abs(sum_length_adj)))
+
+rpts_done <- rpts_summed %>%
+  mutate(ch_name = chapter %>% 
+           str_replace_all('.+[0-9-]+[ab]?|\\..+', '') %>%
+           str_trim() %>%
+           str_to_title()) %>%
+  ungroup() %>%
+  arrange(ch_num) %>%
+  mutate(ch_name = fct_inorder(ch_name),
+         char = factor(char))
+
+write_csv(rpts_done, 'character_storylines.csv')
+```
+
+### Plot character storylines 
+
+For each character, chart out the cumulative sum of 'karmic balance' - using word count as a metric of time.  This is averaged over all adventures to estimate the general character ethos - how they approach a mission.
+
+```{r}
+get_bkgd <- function(file = 'img/vellum1.png',
+                     ht, wd, dpi = 300, 
+                     opacity = 20, color = 'white') {
+  bkgd <- image_read(file) %>%
+    image_trim() %>%
+    image_resize(sprintf('%sx%s!', wd*dpi, ht*dpi)) %>%
+    image_colorize(opacity, color)
+  return(bkgd)
+}
+
+footer <- ggdraw() +
+  draw_image(image_read('img/stabacus.png') %>%
+               image_rotate(180), x = 0, width = .2) +
+  draw_text('Duly prepared by: Archibald Bittersea, Occultant 2nd Rank',
+            x = .2, hjust = 0, size = 12, family = 'hobbit')
+
+
+```
+
+
+```{r storyline plot by character}
+  
+rpts_done <- read_csv('character_storylines.csv')
+
+char_ethos <- rpts_done %>%
+  mutate(wds_norm = round(wds_norm, 2)) %>%
+  group_by(char, wds_norm) %>%
+  summarize(val_sum = sum(value / tot_words)) %>%
+  group_by(char) %>%
+  arrange(wds_norm) %>%
+  mutate(val_cumsum = cumsum(val_sum),
+         val_cumsum = val_cumsum / max(abs(val_cumsum))) %>%
+  ungroup()
+
+x_axis <- data.frame(x = seq(0, 1, .01)) %>%
+  mutate(y = runif(n(), -.01, .01))
+y_axis <- data.frame(y = seq(-1, 1, .01)) %>%
+  mutate(x = runif(n(), -.002, .002))
+lbls <- char_ethos %>%
+  group_by(char) %>%
+  summarize(final_score = last(val_cumsum))
+
+char_arc_plot <- ggplot(char_ethos, aes(x = wds_norm, y = val_cumsum)) +
+  geom_path(data = x_axis, aes(x = x, y = y), color = 'black') +
+  geom_path(data = y_axis, aes(x = x, y = y), color = 'black') +
+  geom_line(color = 'grey20', size = 0.8) +
+  geom_line(aes(color = val_cumsum), size = .5, show.legend = FALSE) +
+  scale_color_gradient2(low = 'red', mid = 'paleturquoise1', high = 'black') +
+  facet_wrap(~char, ncol = 1) +
+  theme_void() +
+  theme(strip.background = element_blank(),
+        strip.text = element_blank(),
+        text = element_text(family = 'hobbit'),
+        plot.margin = unit(c(1.3, 1.3, 1.3, 1.3), 'cm')) +
+  geom_text(data = lbls, x = .02, y = .8, aes(label = char), 
+            family = 'hobbit',
+            hjust = 0, vjust = 1)
+
+ht = 7; wd = 6; dpi = 300
+plot_on_bkgd <- ggdraw() +
+  draw_image(get_bkgd('img/parchment2.jpg', ht = ht, wd = wd, dpi = dpi)) +
+  draw_plot(char_arc_plot, y = .1, height = .9) +
+  draw_plot(footer, y = 0.07, height = .1, x = .1, width = .7)
+
+ggsave('character_ethos.png', width = wd, height = ht, dpi = dpi)
+
+knitr::include_graphics('character_ethos.png')
+```
+
+### Plot karmic balance by chapter
+
+A bar chart showing the karmic balance of each character for each chapter - resulting in a general character arc over the campaign.
+
+```{r character bar plot by chapter}
+  
+rpts_done <- read_csv('character_storylines.csv') %>%
+  arrange(ch_num) %>%
+  mutate(ch_name = fct_inorder(ch_name),
+         ch_id = as.integer(ch_name))
+
+char_arcs <- rpts_done %>%
+  group_by(char, ch_num) %>%
+  slice_tail() %>%
+  ungroup() %>%
+  mutate(score = sum_norm / max(abs(sum_norm)),
+         deficit = score < 0)
+
+n_ch <- char_arcs$chapter %>% n_distinct()
+x_axis <- data.frame(x = seq(0, n_ch, .01)) %>%
+  mutate(y = runif(n(), -.01, .01))
+y_axis <- data.frame(y = seq(-1, 1, .01)) %>%
+  mutate(x = runif(n(), -.002, .002))
+lbls <- char_arcs %>%
+  select(char) %>%
+  distinct()
+
+char_lm <- char_arcs %>%
+  group_by(char) %>%
+  do(mdl = lm(score ~ ch_id, data = .)) %>%
+  mutate(m = mdl$coefficients[1],
+         b = mdl$coefficients[2]) %>%
+  select(-mdl) %>%
+  ungroup() %>%
+  crossing(x = seq(-.5, n_ch + .5, .2)) %>%
+  mutate(y = m + b * x + runif(-.005, +.005, n = n()))
+  
+char_arc_plot <- ggplot(char_arcs, aes(x = ch_id, y = score)) +
+  xkcdrect(data = char_arcs, 
+           aes(xmin = ch_id -.7, xmax = ch_id + .3,
+               ymax = score, ymin = 0, 
+               fill = deficit),
+           alpha = .6, show.legend = FALSE) +
+  scale_fill_manual(values = c('darkgreen', 'darkred')) +
+  ### axes
+  geom_path(data = x_axis, aes(x = x, y = y), color = 'black') +
+  geom_path(data = y_axis, aes(x = x, y = y), color = 'black') +
+  ### linear model lines
+  geom_path(data = char_lm, aes(x = x, y = y), 
+            color = 'oldlace', size = 1.2) +
+  geom_path(data = char_lm, aes(x = x, y = y, color = x),
+            show.legend = FALSE, size = .8) +
+  scale_color_gradient2(high = 'yellow', mid = 'red', low = 'yellow',
+                        midpoint = 9) +
+  facet_wrap(~char, ncol = 3) +
+  theme_void() +
+  theme(strip.background = element_blank(),
+        strip.text = element_blank(),
+        text = element_text(family = 'hobbit'),
+        plot.margin = unit(c(1.8, 1.3, 1.3, 1.3), 'cm')) +
+  geom_text(data = lbls, x = 1, y = .8, aes(label = char), 
+            family = 'hobbit',
+            hjust = 0, vjust = 1)
+
+ht = 7; wd = 6; dpi = 300
+plot_on_bkgd <- ggdraw() +
+  draw_image(get_bkgd('img/paper_flower.jpg', ht = ht, wd = wd, dpi = dpi)) +
+  draw_plot(char_arc_plot, y = .1, height = .9) +
+  draw_plot(footer, y = 0.07, height = .1, x = .1, width = .7)
+
+ggsave('character_arcs.png', width = wd, height = ht, dpi = dpi)
+
+knitr::include_graphics('character_arcs.png')
+```

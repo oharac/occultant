@@ -1,0 +1,276 @@
+---
+title: "process emotional balance"
+author: "Casey O'Hara"
+date: "2/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+oharac::setup()
+library(tidyverse)
+library(tidytext)
+library(widyr) ### for function: pairwise_count()
+library(xkcd)
+library(cowplot)
+library(magick)
+library(showtext)
+font_add(family = 'hobbit', regular = '/Library/Fonts/hobbitonbrushhand.ttf')
+showtext_auto()
+```
+
+### Process reports
+
+Using `nrc` lexicon, score each report over time using a cumulative sum.  The reports all trend downward using raw scores, indicating an overall negative tone.  To help account for this, there is a `pos_adj` parameter that calculates the ratio of `abs(sum(neg) / sum(pos))`.  Multiplying the positive scores by (some fraction of) this parameter helps boost those scores in relation to negative scores.
+
+```{r}
+lex <- get_sentiments('nrc')
+lex_pairwise <- lex %>%
+  filter(!sentiment %in% c('positive', 'negative')) %>%
+  pairwise_count(sentiment, word, diag = TRUE) %>%
+  group_by(item1) %>%
+  mutate(n_item1 = n[item1 == item2],
+         pct_1 = n / n_item1) %>%
+  ungroup() %>%
+  filter(item1 > item2)
+
+lex_match <- lex_pairwise %>%
+  mutate(match = case_when(pct_1 > .50 ~ 'high',
+                           pct_1 < .25 ~ 'low',
+                           TRUE ~ NA_character_))
+
+# knitr::kable(lex_pairwise %>%
+#   select(item1, item2, pct_1) %>%
+#   spread(item2, pct_1))                  
+```
+
+```{r}
+fs <- list.files('reports', full.names = TRUE)
+
+rpts <- lapply(fs, FUN = function(f) {
+  ### f <- fs[1]
+  ftype <- str_extract(f, '\\..+')
+  x <- switch(ftype, 
+              .txt = scan(f, what = 'character'),
+              .rtf = textreadr::read_rtf(f))
+  y <- data.frame(txt = x)
+}) %>%
+  setNames(basename(fs)) %>%
+  bind_rows(.id = 'chapter') %>%
+  group_by(chapter) %>%
+  summarize(txt = paste(txt, sep = ' ', collapse = ' '))
+
+char_names <- tribble(
+  ~text, ~char,
+  'chibo', 'chibo',
+  'rinoa', 'rinoa',
+  'ev', 'evertonette',
+  'evertonette', 'evertonette',
+  'vandare', 'vandare',
+  'artien', 'artien',
+  'rook', 'rook',
+  'tertius', 'rook',
+  'dane', 'dane',
+  'ordinance', 'dane',
+  'xotl', 'xotl')
+
+char_search <- paste0(char_names$text, collapse = '|')
+rpts_character_tidy <- rpts %>%
+  unnest_tokens(sentence, txt, token = 'sentences') %>%
+  ### unnest to words for character name match in sentence
+  unnest_tokens(word, sentence, token = 'words', drop = FALSE) %>%
+  inner_join(char_names, by = c('word' = 'text')) %>%
+  ### drop word column and re-unnest_tokens to word, keeping char names
+  select(-word) %>%
+  unnest_tokens(word, sentence, 'words', drop = TRUE) %>%
+  distinct() %>%
+  group_by(chapter, char) %>%
+  mutate(word_num = 1:n(),
+         tot_words = n(),
+         ch_num = str_extract(chapter, '[0-9]+') %>% as.numeric(),
+         ch_num = ifelse(str_detect(chapter, '11b'), 11.5, ch_num)) %>%
+  ungroup() %>% 
+  arrange(char)
+
+rpts_team_tidy <- rpts %>%
+  unnest_tokens(word, txt, 'words') %>%
+  group_by(chapter) %>%
+  mutate(char = 'LT-031',
+         word_num = 1:n(),
+         tot_words = n(),
+         ch_num = str_extract(chapter, '[0-9]+') %>% as.numeric(),
+         ch_num = ifelse(str_detect(chapter, '11b'), 11.5, ch_num)) %>%
+  ungroup()
+
+rpts_tidy <- rpts_team_tidy %>%
+  bind_rows(rpts_character_tidy) %>%
+  mutate(char = fct_inorder(char))
+  
+drop_words <- c('elf', 'rook', 'gnome', 'goblin')
+
+rpts_scored <- rpts_tidy %>%
+  anti_join(stop_words) %>%
+  inner_join(get_sentiments('nrc')) %>%
+  filter(!word %in% drop_words)
+
+rpts_summed <- rpts_scored %>%
+  group_by(chapter, char, sentiment) %>%
+  summarize(sum_sent = n(),
+            words = first(tot_words),
+            ch_num = first(ch_num)) %>%
+  ungroup() %>%
+  filter(!sentiment %in% c('positive', 'negative'))
+
+rpts_done <- rpts_summed %>%
+  mutate(ch_name = chapter %>% 
+           str_replace_all('.+[0-9-]+[ab]?|\\..+', '') %>%
+           str_trim() %>%
+           str_to_title()) %>%
+  ungroup()
+
+write_csv(rpts_done, 'emotional_balance.csv')
+```
+
+### Plot emotional balances 
+
+
+```{r}
+get_bkgd <- function(file = 'img/vellum1.png',
+                     ht, wd, dpi = 300, 
+                     opacity = 20, color = 'white') {
+  bkgd <- image_read(file) %>%
+    image_trim() %>%
+    image_resize(sprintf('%sx%s!', wd*dpi, ht*dpi)) %>%
+    image_colorize(opacity, color)
+  return(bkgd)
+}
+
+footer <- ggdraw() +
+  draw_image(image_read('img/stabacus.png') %>%
+               image_rotate(180), x = 0, width = .2) +
+  draw_text('Duly prepared by: Archibald Bittersea, Occultant 2nd Rank',
+            x = .2, hjust = 0, size = 12, family = 'hobbit')
+
+
+```
+
+For each mission, chart out the 'emotional balance' of the team - the sum of sentiment words for each of the various emotional sentiments.
+
+```{r team emotional plot by chapter}
+  
+rpts_done <- read_csv('emotional_balance.csv') %>%
+  arrange(ch_num) %>%
+  mutate(ch_name = fct_inorder(ch_name) %>% fct_rev(),
+         ch_id = as.integer(ch_name))
+
+emo_lt031 <- rpts_done %>%
+  filter(char == 'LT-031') %>%
+  ### set as zero the lowest normalized sentiment score in any chapter;
+  ### then div by the highest overall result to get 0-1
+  mutate(sum_sent_norm = sum_sent / words,
+         sum_sent_norm = sum_sent_norm - min(sum_sent_norm),
+         sum_sent_norm = sum_sent_norm / max(sum_sent_norm)) %>%
+  ungroup() %>%
+  mutate(label = sprintf('%s. %s', ch_num, ch_name))
+
+n_ch <- emo_lt031$chapter %>% n_distinct()
+ch_names <- emo_lt031$ch_name %>% levels()
+x_axis <- data.frame(x = seq(-.25, n_ch + .75, .1)) %>%
+  mutate(y = runif(n(), -.001, .001))
+y_axis <- data.frame(y = seq(-.1, 1, .01)) %>%
+  mutate(x = runif(n(), -.01, .01) + n_ch + .5)
+
+team_emo_plot <- ggplot() +
+  xkcdrect(data = emo_lt031, 
+           aes(xmin = ch_id -.5, xmax = ch_id + .3,
+               ymax = sum_sent_norm, ymin = 0, 
+               fill = sentiment),
+           alpha = .9,
+           show.legend = FALSE) +
+  geom_path(data = x_axis, aes(x = x, y = y), color = 'darkred') +
+  geom_path(data = y_axis, aes(x = x, y = y), color = 'darkred') +
+  theme_void() +
+  scale_x_continuous(breaks = 1:n_ch, labels = ch_names, expand = c(0, 0)) +
+  scale_fill_viridis_d(option = 'inferno') +
+  theme(text = element_text(family = 'hobbit'),
+        strip.text = element_text(angle = 90, hjust = 0, vjust = .5, size = 12),
+        strip.switch.pad.grid = unit(0, 'cm'),
+        axis.text.y = element_text(hjust = 1),
+        plot.margin = unit(c(0, 0, 0, 0), 'cm')) +
+  coord_flip() +
+  facet_wrap(~ sentiment, nrow = 1)
+
+ht = 6; wd = 6; dpi = 300
+plot_on_bkgd <- ggdraw() +
+  draw_image(get_bkgd('img/paper_w_hdr_ftr.jpg', 
+                      ht = ht, wd = wd, dpi = dpi)) +
+  draw_plot(team_emo_plot, y = .15, height = .8, x = .04, width = .9) +
+  draw_plot(footer, y = 0.07, height = .1, x = .1, width = .8)
+
+ggsave('emotion_by_chapter.png', width = wd, height = ht, dpi = dpi)
+
+knitr::include_graphics('emotion_by_chapter.png')
+```
+
+### Plot emotional balance by character
+
+```{r emotional plot by character}
+  
+rpts_done <- read_csv('emotional_balance.csv')
+
+emo_by_char <- rpts_done %>%
+  mutate(char = fct_inorder(char)) %>%
+  group_by(char, sentiment) %>%
+  summarize(score = sum(sum_sent / words)) %>%
+  ungroup() %>%
+  mutate(char_num = as.integer(char),
+         sentiment = fct_inorder(sentiment),
+         sent_num = as.integer(sentiment),
+         score = score - min(score),
+         score = score / max(score)) %>%
+  group_by(char) %>%
+  arrange(desc(score)) %>%
+  mutate(score = score / max(score),
+         rank = case_when(score >= nth(score, 2) ~ 'top',
+                          score <= nth(score, -2) ~ 'btm',
+                          TRUE  ~ 'mid')) %>%
+  ungroup()
+
+sent_names <- emo_by_char$sentiment %>% levels()
+n_sent <- length(sent_names)
+x_axis <- data.frame(x = seq(0, n_sent + .75, .1)) %>%
+  mutate(y = runif(n(), -.001, .001))
+y_axis <- data.frame(y = seq(-.1, 1, .01)) %>%
+  mutate(x = runif(n(), -.01, .01) + n_sent + .5)
+
+char_emo_plot <- ggplot() +
+  xkcdrect(data = emo_by_char, 
+           aes(xmin = sent_num -.5, xmax = sent_num + .3,
+               ymax = score, ymin = 0, 
+               fill = rank),
+           alpha = .7,
+           show.legend = FALSE) +
+  coord_flip() +
+  facet_wrap(~ char, nrow = 1) +
+  geom_path(data = x_axis, aes(x = x, y = y), color = 'darkred') +
+  geom_path(data = y_axis, aes(x = x, y = y), color = 'darkred') +
+  theme_void() +
+  theme(text = element_text(family = 'hobbit'),
+        strip.text = element_text(angle = 90, hjust = 0, vjust = .5, size = 12),
+        strip.switch.pad.grid = unit(0, 'cm'),
+        axis.text.y = element_text(hjust = 1),
+        plot.margin = unit(c(0, 0, 0, 0), 'cm')) +
+  scale_x_continuous(breaks = 1:n_sent, labels = sent_names, expand = c(0, 0)) +
+  scale_fill_manual(breaks = c('top', 'btm', 'mid'), values = c('yellow', 'darkred', 'black'))
+  
+ht = 6; wd = 8; dpi = 300
+plot_on_bkgd <- ggdraw() +
+  draw_image(get_bkgd('img/parchment3.jpg', 
+                      ht = ht, wd = wd, dpi = dpi)) +
+  draw_plot(char_emo_plot, y = .15, height = .8, x = .04, width = .9) +
+  draw_plot(footer, y = 0.05, height = .1, x = .25, width = .7)
+
+ggsave('emotion_by_character.png', width = wd, height = ht, dpi = dpi)
+
+knitr::include_graphics('emotion_by_character.png')
+```

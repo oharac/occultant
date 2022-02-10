@@ -1,0 +1,930 @@
+chapter,char,sentiment,sum_sent,words,ch_num,ch_name
+Span notes 1 aardborg.txt,LT-031,anger,63,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,anticipation,89,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,disgust,44,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,fear,103,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,joy,53,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,sadness,59,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,surprise,52,4500,1,Aardborg
+Span notes 1 aardborg.txt,LT-031,trust,94,4500,1,Aardborg
+Span notes 1 aardborg.txt,chibo,anger,6,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,anticipation,14,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,disgust,5,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,fear,12,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,joy,8,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,sadness,5,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,surprise,6,323,1,Aardborg
+Span notes 1 aardborg.txt,chibo,trust,12,323,1,Aardborg
+Span notes 1 aardborg.txt,dane,anger,9,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,anticipation,9,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,disgust,8,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,fear,16,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,joy,6,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,sadness,8,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,surprise,6,295,1,Aardborg
+Span notes 1 aardborg.txt,dane,trust,8,295,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,anger,9,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,anticipation,11,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,disgust,6,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,fear,11,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,joy,11,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,sadness,8,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,surprise,5,368,1,Aardborg
+Span notes 1 aardborg.txt,evertonette,trust,19,368,1,Aardborg
+Span notes 1 aardborg.txt,rook,anger,4,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,anticipation,10,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,disgust,1,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,fear,6,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,joy,7,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,sadness,7,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,surprise,7,322,1,Aardborg
+Span notes 1 aardborg.txt,rook,trust,10,322,1,Aardborg
+Span notes 1 aardborg.txt,vandare,anger,7,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,anticipation,8,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,disgust,1,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,fear,12,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,joy,4,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,sadness,5,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,surprise,2,205,1,Aardborg
+Span notes 1 aardborg.txt,vandare,trust,11,205,1,Aardborg
+Span notes 1 aardborg.txt,xotl,anger,6,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,anticipation,8,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,disgust,5,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,fear,8,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,joy,11,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,sadness,4,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,surprise,6,279,1,Aardborg
+Span notes 1 aardborg.txt,xotl,trust,16,279,1,Aardborg
+SPAN notes 10 widebridge.txt,LT-031,anger,69,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,anticipation,89,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,disgust,37,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,fear,110,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,joy,62,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,sadness,59,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,surprise,43,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,LT-031,trust,96,4646,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,anger,9,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,anticipation,9,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,disgust,6,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,fear,18,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,joy,4,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,sadness,8,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,surprise,4,356,10,Widebridge
+SPAN notes 10 widebridge.txt,chibo,trust,9,356,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,anger,5,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,anticipation,19,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,disgust,5,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,fear,6,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,joy,9,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,sadness,3,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,surprise,4,440,10,Widebridge
+SPAN notes 10 widebridge.txt,dane,trust,20,440,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,anger,8,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,anticipation,8,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,disgust,3,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,fear,12,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,joy,7,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,sadness,6,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,surprise,4,204,10,Widebridge
+SPAN notes 10 widebridge.txt,evertonette,trust,8,204,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,anger,4,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,anticipation,2,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,disgust,2,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,fear,5,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,sadness,1,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,surprise,2,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rinoa,trust,3,103,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,anger,7,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,anticipation,4,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,disgust,3,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,fear,10,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,joy,2,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,sadness,8,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,surprise,2,211,10,Widebridge
+SPAN notes 10 widebridge.txt,rook,trust,4,211,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,anger,7,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,anticipation,5,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,fear,6,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,joy,1,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,sadness,3,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,surprise,6,178,10,Widebridge
+SPAN notes 10 widebridge.txt,xotl,trust,1,178,10,Widebridge
+SPAN notes 11a merylsward prologue.txt,LT-031,anger,68,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,anticipation,43,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,disgust,24,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,fear,69,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,joy,26,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,sadness,49,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,surprise,18,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,LT-031,trust,44,2569,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,anger,9,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,anticipation,9,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,disgust,6,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,fear,17,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,joy,5,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,sadness,8,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,surprise,2,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,chibo,trust,9,296,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,dane,anger,2,60,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,dane,anticipation,1,60,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,dane,joy,2,60,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,dane,trust,5,60,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,anger,2,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,anticipation,2,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,fear,1,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,joy,1,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,sadness,2,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,evertonette,trust,2,84,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rinoa,anger,2,61,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rinoa,disgust,1,61,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rinoa,fear,2,61,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rinoa,sadness,3,61,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,anger,5,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,anticipation,7,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,disgust,2,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,fear,5,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,joy,5,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,sadness,2,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,rook,trust,7,161,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,anger,16,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,anticipation,6,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,disgust,5,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,fear,14,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,joy,5,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,sadness,9,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,surprise,4,364,11,Merylsward Prologue
+SPAN notes 11a merylsward prologue.txt,xotl,trust,7,364,11,Merylsward Prologue
+SPAN notes 11b merylsward.txt,LT-031,anger,145,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,anticipation,109,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,disgust,83,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,fear,156,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,joy,74,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,sadness,110,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,surprise,67,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,LT-031,trust,156,7298,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,anger,23,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,anticipation,14,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,disgust,13,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,fear,22,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,joy,14,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,sadness,16,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,surprise,11,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,chibo,trust,19,542,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,anger,14,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,anticipation,11,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,disgust,6,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,fear,14,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,joy,8,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,sadness,11,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,surprise,6,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,dane,trust,19,539,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,anger,13,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,anticipation,9,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,disgust,6,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,fear,11,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,joy,11,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,sadness,5,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,surprise,9,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,evertonette,trust,13,348,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,anger,15,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,anticipation,7,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,disgust,11,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,fear,19,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,joy,7,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,sadness,13,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,surprise,6,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rinoa,trust,14,383,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,anger,7,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,anticipation,9,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,disgust,2,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,fear,4,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,joy,4,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,sadness,4,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,surprise,4,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,rook,trust,7,225,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,anger,20,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,anticipation,11,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,disgust,13,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,fear,22,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,joy,6,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,sadness,12,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,surprise,13,485,11.5,Merylsward
+SPAN notes 11b merylsward.txt,xotl,trust,13,485,11.5,Merylsward
+SPAN notes 12 Korth.txt,LT-031,anger,66,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,anticipation,51,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,disgust,33,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,fear,92,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,joy,30,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,sadness,54,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,surprise,29,3287,12,Korth
+SPAN notes 12 Korth.txt,LT-031,trust,67,3287,12,Korth
+SPAN notes 12 Korth.txt,chibo,anger,15,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,anticipation,8,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,disgust,6,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,fear,22,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,joy,4,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,sadness,16,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,surprise,5,385,12,Korth
+SPAN notes 12 Korth.txt,chibo,trust,14,385,12,Korth
+SPAN notes 12 Korth.txt,dane,anger,6,135,12,Korth
+SPAN notes 12 Korth.txt,dane,anticipation,4,135,12,Korth
+SPAN notes 12 Korth.txt,dane,disgust,1,135,12,Korth
+SPAN notes 12 Korth.txt,dane,fear,6,135,12,Korth
+SPAN notes 12 Korth.txt,dane,joy,5,135,12,Korth
+SPAN notes 12 Korth.txt,dane,sadness,3,135,12,Korth
+SPAN notes 12 Korth.txt,dane,surprise,3,135,12,Korth
+SPAN notes 12 Korth.txt,dane,trust,7,135,12,Korth
+SPAN notes 12 Korth.txt,evertonette,anger,4,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,anticipation,4,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,disgust,1,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,fear,4,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,joy,3,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,sadness,4,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,surprise,8,141,12,Korth
+SPAN notes 12 Korth.txt,evertonette,trust,7,141,12,Korth
+SPAN notes 12 Korth.txt,rinoa,anger,9,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,anticipation,6,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,disgust,3,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,fear,8,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,joy,3,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,sadness,4,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,surprise,2,291,12,Korth
+SPAN notes 12 Korth.txt,rinoa,trust,9,291,12,Korth
+SPAN notes 12 Korth.txt,rook,anger,8,182,12,Korth
+SPAN notes 12 Korth.txt,rook,anticipation,6,182,12,Korth
+SPAN notes 12 Korth.txt,rook,disgust,1,182,12,Korth
+SPAN notes 12 Korth.txt,rook,fear,7,182,12,Korth
+SPAN notes 12 Korth.txt,rook,joy,2,182,12,Korth
+SPAN notes 12 Korth.txt,rook,sadness,3,182,12,Korth
+SPAN notes 12 Korth.txt,rook,surprise,4,182,12,Korth
+SPAN notes 12 Korth.txt,rook,trust,6,182,12,Korth
+SPAN notes 12 Korth.txt,xotl,anger,5,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,anticipation,5,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,disgust,1,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,fear,4,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,joy,4,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,sadness,2,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,surprise,4,142,12,Korth
+SPAN notes 12 Korth.txt,xotl,trust,6,142,12,Korth
+SPAN notes 13 Beneath Thronehold.txt,LT-031,anger,36,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,anticipation,24,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,disgust,14,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,fear,39,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,joy,21,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,sadness,28,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,surprise,17,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,LT-031,trust,36,1906,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,anger,2,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,anticipation,2,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,fear,4,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,sadness,1,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,surprise,2,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,chibo,trust,1,130,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,anger,3,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,anticipation,6,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,disgust,2,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,fear,3,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,joy,3,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,sadness,2,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,surprise,2,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,dane,trust,5,100,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,anger,4,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,anticipation,3,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,disgust,2,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,fear,6,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,joy,2,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,sadness,2,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,surprise,2,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,evertonette,trust,3,129,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,anger,7,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,anticipation,5,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,disgust,1,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,fear,5,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,joy,6,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,sadness,3,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,surprise,4,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,rook,trust,8,144,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,anger,3,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,anticipation,3,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,fear,4,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,joy,3,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,sadness,4,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,surprise,3,116,13,Beneath Thronehold
+SPAN notes 13 Beneath Thronehold.txt,xotl,trust,2,116,13,Beneath Thronehold
+SPAN notes 14 - The Obstabatory.txt,LT-031,anger,92,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,anticipation,104,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,disgust,53,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,fear,105,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,joy,48,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,sadness,78,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,surprise,42,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,LT-031,trust,97,4958,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,anger,12,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,anticipation,11,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,disgust,4,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,fear,13,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,joy,6,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,sadness,7,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,surprise,5,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,artien,trust,8,220,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,anger,18,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,anticipation,17,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,disgust,11,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,fear,20,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,joy,6,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,sadness,16,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,surprise,5,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,chibo,trust,20,569,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,anger,16,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,anticipation,17,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,disgust,13,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,fear,17,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,joy,11,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,sadness,16,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,surprise,6,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,dane,trust,20,434,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,evertonette,anticipation,2,33,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,evertonette,joy,1,33,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,evertonette,trust,1,33,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,anger,14,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,anticipation,16,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,disgust,11,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,fear,17,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,joy,11,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,sadness,11,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,surprise,5,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,rook,trust,24,443,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,anger,6,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,anticipation,6,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,disgust,4,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,fear,3,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,joy,3,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,sadness,3,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,surprise,3,148,14,The Obstabatory
+SPAN notes 14 - The Obstabatory.txt,xotl,trust,7,148,14,The Obstabatory
+SPAN notes 15 - release the kraken!.txt,LT-031,anger,154,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,anticipation,128,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,disgust,87,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,fear,181,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,joy,64,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,sadness,98,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,surprise,69,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,LT-031,trust,105,6517,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,anger,12,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,anticipation,8,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,disgust,3,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,fear,15,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,joy,6,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,sadness,8,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,surprise,6,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,artien,trust,9,295,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,anger,17,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,anticipation,21,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,disgust,14,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,fear,21,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,joy,12,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,sadness,19,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,surprise,9,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,chibo,trust,14,493,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,anger,14,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,anticipation,12,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,disgust,5,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,fear,14,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,joy,7,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,sadness,11,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,surprise,6,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,dane,trust,10,334,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,anger,31,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,anticipation,19,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,disgust,11,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,fear,32,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,joy,10,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,sadness,22,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,surprise,12,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,rook,trust,16,507,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,anger,16,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,anticipation,12,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,disgust,11,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,fear,19,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,joy,6,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,sadness,10,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,surprise,7,362,15,Release The Kraken!
+SPAN notes 15 - release the kraken!.txt,xotl,trust,11,362,15,Release The Kraken!
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,anger,49,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,anticipation,50,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,disgust,52,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,fear,78,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,joy,26,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,sadness,40,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,surprise,15,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,LT-031,trust,55,2455,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,artien,anger,1,57,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,artien,disgust,1,57,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,artien,fear,1,57,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,artien,sadness,1,57,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,artien,trust,2,57,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,anger,3,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,anticipation,5,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,disgust,3,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,fear,8,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,joy,3,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,sadness,3,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,surprise,2,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,chibo,trust,4,168,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,anger,3,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,anticipation,4,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,disgust,4,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,fear,8,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,joy,1,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,sadness,2,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,dane,trust,6,196,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,anger,11,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,anticipation,10,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,disgust,4,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,fear,15,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,joy,4,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,sadness,7,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,surprise,4,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,rook,trust,9,244,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,anger,7,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,anticipation,4,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,disgust,8,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,fear,7,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,joy,4,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,sadness,4,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,surprise,2,222,16,Lonely Is The Night Hag
+SPAN notes 16 - lonely is the Night Hag.txt,xotl,trust,6,222,16,Lonely Is The Night Hag
+SPAN notes 17 - Occam's Glazier.txt,LT-031,anger,55,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,anticipation,67,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,disgust,26,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,fear,69,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,joy,42,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,sadness,63,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,surprise,32,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,LT-031,trust,73,3557,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,anger,4,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,anticipation,7,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,disgust,2,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,fear,4,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,joy,1,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,sadness,3,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,surprise,3,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,artien,trust,4,139,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,anger,5,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,anticipation,7,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,disgust,2,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,fear,12,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,joy,7,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,sadness,9,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,surprise,7,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,chibo,trust,7,307,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,anger,13,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,anticipation,9,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,disgust,7,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,fear,13,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,joy,8,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,sadness,10,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,surprise,6,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,dane,trust,10,348,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,rook,anger,2,131,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,rook,anticipation,2,131,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,rook,disgust,1,131,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,rook,sadness,1,131,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,rook,trust,1,131,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,anger,5,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,anticipation,4,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,disgust,2,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,fear,5,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,joy,3,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,sadness,4,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,surprise,2,117,17,Occam's Glazier
+SPAN notes 17 - Occam's Glazier.txt,xotl,trust,4,117,17,Occam's Glazier
+Span notes 2 horunda valley.txt,LT-031,anger,64,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,anticipation,61,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,disgust,38,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,fear,93,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,joy,30,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,sadness,45,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,surprise,31,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,LT-031,trust,73,3428,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,anger,2,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,anticipation,2,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,disgust,1,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,fear,4,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,sadness,2,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,surprise,1,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,chibo,trust,3,129,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,anger,6,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,anticipation,7,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,disgust,2,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,fear,9,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,joy,3,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,sadness,2,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,surprise,2,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,dane,trust,8,154,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,anger,5,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,anticipation,1,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,disgust,2,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,fear,6,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,joy,1,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,sadness,2,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,surprise,2,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,evertonette,trust,1,93,2,Horunda Valley
+Span notes 2 horunda valley.txt,rinoa,anger,1,44,2,Horunda Valley
+Span notes 2 horunda valley.txt,rinoa,fear,1,44,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,anger,6,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,anticipation,9,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,disgust,4,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,fear,6,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,joy,3,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,sadness,3,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,surprise,3,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,rook,trust,5,212,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,anger,8,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,anticipation,7,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,disgust,4,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,fear,12,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,joy,3,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,sadness,2,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,surprise,3,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,vandare,trust,9,231,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,anger,2,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,anticipation,2,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,disgust,4,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,fear,3,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,joy,2,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,sadness,3,110,2,Horunda Valley
+Span notes 2 horunda valley.txt,xotl,trust,3,110,2,Horunda Valley
+Span notes 3 thaliost.txt,LT-031,anger,43,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,anticipation,74,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,disgust,21,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,fear,55,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,joy,33,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,sadness,50,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,surprise,24,3293,3,Thaliost
+Span notes 3 thaliost.txt,LT-031,trust,63,3293,3,Thaliost
+Span notes 3 thaliost.txt,chibo,anger,2,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,anticipation,7,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,disgust,2,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,fear,4,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,joy,1,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,sadness,3,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,surprise,2,210,3,Thaliost
+Span notes 3 thaliost.txt,chibo,trust,7,210,3,Thaliost
+Span notes 3 thaliost.txt,dane,anger,5,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,anticipation,10,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,disgust,4,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,fear,4,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,joy,4,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,sadness,3,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,surprise,2,232,3,Thaliost
+Span notes 3 thaliost.txt,dane,trust,6,232,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,anger,8,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,anticipation,13,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,disgust,4,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,fear,14,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,joy,6,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,sadness,7,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,surprise,6,248,3,Thaliost
+Span notes 3 thaliost.txt,evertonette,trust,7,248,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,anger,4,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,anticipation,6,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,disgust,1,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,fear,4,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,joy,1,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,sadness,2,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,surprise,1,155,3,Thaliost
+Span notes 3 thaliost.txt,rinoa,trust,6,155,3,Thaliost
+Span notes 3 thaliost.txt,rook,anger,3,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,anticipation,9,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,disgust,3,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,fear,5,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,joy,4,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,sadness,7,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,surprise,2,209,3,Thaliost
+Span notes 3 thaliost.txt,rook,trust,12,209,3,Thaliost
+Span notes 3 thaliost.txt,vandare,anticipation,1,43,3,Thaliost
+Span notes 3 thaliost.txt,vandare,fear,2,43,3,Thaliost
+Span notes 3 thaliost.txt,xotl,anger,2,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,anticipation,6,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,disgust,2,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,fear,6,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,joy,2,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,sadness,1,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,surprise,2,163,3,Thaliost
+Span notes 3 thaliost.txt,xotl,trust,3,163,3,Thaliost
+Span notes 4 xandrar.txt,LT-031,anger,63,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,anticipation,71,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,disgust,20,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,fear,78,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,joy,30,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,sadness,59,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,surprise,21,4555,4,Xandrar
+Span notes 4 xandrar.txt,LT-031,trust,159,4555,4,Xandrar
+Span notes 4 xandrar.txt,chibo,anger,7,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,anticipation,10,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,disgust,2,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,fear,10,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,joy,3,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,sadness,9,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,surprise,4,252,4,Xandrar
+Span notes 4 xandrar.txt,chibo,trust,8,252,4,Xandrar
+Span notes 4 xandrar.txt,dane,anger,1,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,anticipation,5,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,disgust,1,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,fear,3,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,joy,2,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,sadness,1,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,surprise,2,190,4,Xandrar
+Span notes 4 xandrar.txt,dane,trust,8,190,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,anger,4,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,anticipation,4,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,disgust,1,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,fear,7,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,joy,1,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,sadness,2,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,surprise,1,172,4,Xandrar
+Span notes 4 xandrar.txt,evertonette,trust,9,172,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,anger,4,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,anticipation,8,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,disgust,1,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,fear,8,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,joy,1,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,sadness,4,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,surprise,2,226,4,Xandrar
+Span notes 4 xandrar.txt,rinoa,trust,8,226,4,Xandrar
+Span notes 4 xandrar.txt,rook,anger,3,179,4,Xandrar
+Span notes 4 xandrar.txt,rook,anticipation,7,179,4,Xandrar
+Span notes 4 xandrar.txt,rook,fear,3,179,4,Xandrar
+Span notes 4 xandrar.txt,rook,joy,1,179,4,Xandrar
+Span notes 4 xandrar.txt,rook,surprise,1,179,4,Xandrar
+Span notes 4 xandrar.txt,rook,trust,11,179,4,Xandrar
+Span notes 4 xandrar.txt,vandare,anger,3,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,anticipation,3,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,fear,2,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,joy,1,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,sadness,3,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,surprise,2,125,4,Xandrar
+Span notes 4 xandrar.txt,vandare,trust,7,125,4,Xandrar
+Span notes 4 xandrar.txt,xotl,anger,2,103,4,Xandrar
+Span notes 4 xandrar.txt,xotl,anticipation,3,103,4,Xandrar
+Span notes 4 xandrar.txt,xotl,fear,2,103,4,Xandrar
+Span notes 4 xandrar.txt,xotl,sadness,2,103,4,Xandrar
+Span notes 4 xandrar.txt,xotl,surprise,2,103,4,Xandrar
+Span notes 4 xandrar.txt,xotl,trust,4,103,4,Xandrar
+SPAN notes 5 zilargo.txt,LT-031,anger,99,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,anticipation,70,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,disgust,51,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,fear,136,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,joy,31,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,sadness,60,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,surprise,42,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,LT-031,trust,84,3869,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,anger,14,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,anticipation,7,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,disgust,6,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,fear,13,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,joy,6,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,sadness,9,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,surprise,6,326,5,Zilargo
+SPAN notes 5 zilargo.txt,chibo,trust,9,326,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,anger,3,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,anticipation,5,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,disgust,1,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,fear,5,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,joy,5,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,sadness,4,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,surprise,3,108,5,Zilargo
+SPAN notes 5 zilargo.txt,dane,trust,5,108,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,anger,8,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,anticipation,3,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,disgust,5,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,fear,11,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,sadness,2,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,surprise,5,134,5,Zilargo
+SPAN notes 5 zilargo.txt,evertonette,trust,3,134,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,anger,6,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,anticipation,5,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,disgust,2,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,fear,10,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,joy,2,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,sadness,2,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,surprise,2,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rinoa,trust,7,196,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,anger,8,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,anticipation,7,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,disgust,3,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,fear,11,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,sadness,4,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,surprise,4,158,5,Zilargo
+SPAN notes 5 zilargo.txt,rook,trust,5,158,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,anger,5,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,anticipation,3,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,disgust,1,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,fear,9,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,joy,1,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,sadness,4,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,surprise,3,177,5,Zilargo
+SPAN notes 5 zilargo.txt,vandare,trust,5,177,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,anger,18,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,anticipation,9,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,disgust,6,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,fear,19,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,joy,6,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,sadness,12,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,surprise,6,303,5,Zilargo
+SPAN notes 5 zilargo.txt,xotl,trust,9,303,5,Zilargo
+SPAN notes 6 karrnath.txt,LT-031,anger,61,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,anticipation,34,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,disgust,28,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,fear,83,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,joy,17,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,sadness,42,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,surprise,22,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,LT-031,trust,56,2406,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,anger,7,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,anticipation,8,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,disgust,3,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,fear,9,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,joy,3,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,sadness,7,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,surprise,3,214,6,Karrnath
+SPAN notes 6 karrnath.txt,chibo,trust,4,214,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,anger,8,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,anticipation,3,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,disgust,3,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,fear,11,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,joy,4,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,sadness,2,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,surprise,1,195,6,Karrnath
+SPAN notes 6 karrnath.txt,dane,trust,5,195,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,anger,5,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,anticipation,2,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,disgust,5,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,fear,5,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,joy,2,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,sadness,4,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,surprise,3,109,6,Karrnath
+SPAN notes 6 karrnath.txt,evertonette,trust,4,109,6,Karrnath
+SPAN notes 6 karrnath.txt,rinoa,anger,2,78,6,Karrnath
+SPAN notes 6 karrnath.txt,rinoa,disgust,2,78,6,Karrnath
+SPAN notes 6 karrnath.txt,rinoa,fear,2,78,6,Karrnath
+SPAN notes 6 karrnath.txt,rinoa,sadness,3,78,6,Karrnath
+SPAN notes 6 karrnath.txt,rinoa,trust,2,78,6,Karrnath
+SPAN notes 6 karrnath.txt,rook,anger,2,61,6,Karrnath
+SPAN notes 6 karrnath.txt,rook,fear,2,61,6,Karrnath
+SPAN notes 6 karrnath.txt,rook,sadness,2,61,6,Karrnath
+SPAN notes 6 karrnath.txt,rook,trust,3,61,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,anger,4,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,anticipation,3,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,disgust,5,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,fear,8,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,joy,1,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,sadness,6,170,6,Karrnath
+SPAN notes 6 karrnath.txt,xotl,trust,4,170,6,Karrnath
+SPAN notes 7 newthrone.txt,LT-031,anger,67,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,anticipation,75,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,disgust,10,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,fear,61,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,joy,33,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,sadness,20,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,surprise,25,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,LT-031,trust,70,2198,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,anger,6,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,anticipation,8,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,disgust,3,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,fear,8,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,joy,4,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,sadness,3,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,surprise,6,236,7,Newthrone
+SPAN notes 7 newthrone.txt,chibo,trust,8,236,7,Newthrone
+SPAN notes 7 newthrone.txt,dane,anger,5,118,7,Newthrone
+SPAN notes 7 newthrone.txt,dane,anticipation,5,118,7,Newthrone
+SPAN notes 7 newthrone.txt,dane,fear,2,118,7,Newthrone
+SPAN notes 7 newthrone.txt,dane,joy,3,118,7,Newthrone
+SPAN notes 7 newthrone.txt,dane,trust,8,118,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,anger,5,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,anticipation,4,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,fear,6,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,joy,2,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,sadness,1,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,surprise,3,151,7,Newthrone
+SPAN notes 7 newthrone.txt,evertonette,trust,5,151,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,anger,6,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,anticipation,5,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,fear,2,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,joy,3,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,sadness,1,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,surprise,1,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rinoa,trust,5,114,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,anger,13,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,anticipation,6,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,disgust,2,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,fear,15,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,joy,3,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,sadness,5,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,surprise,6,148,7,Newthrone
+SPAN notes 7 newthrone.txt,rook,trust,8,148,7,Newthrone
+SPAN notes 8 prospect.txt,LT-031,anger,90,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,anticipation,72,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,disgust,56,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,fear,106,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,joy,33,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,sadness,71,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,surprise,52,4238,8,Prospect
+SPAN notes 8 prospect.txt,LT-031,trust,121,4238,8,Prospect
+SPAN notes 8 prospect.txt,chibo,anger,10,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,anticipation,12,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,disgust,7,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,fear,16,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,joy,5,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,sadness,10,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,surprise,7,312,8,Prospect
+SPAN notes 8 prospect.txt,chibo,trust,10,312,8,Prospect
+SPAN notes 8 prospect.txt,dane,anger,11,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,anticipation,9,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,disgust,6,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,fear,15,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,joy,5,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,sadness,8,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,surprise,5,252,8,Prospect
+SPAN notes 8 prospect.txt,dane,trust,9,252,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,anger,5,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,anticipation,4,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,disgust,3,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,fear,8,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,joy,2,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,sadness,6,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,surprise,4,156,8,Prospect
+SPAN notes 8 prospect.txt,evertonette,trust,6,156,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,anger,6,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,anticipation,3,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,disgust,4,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,fear,8,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,joy,2,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,sadness,5,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,surprise,3,159,8,Prospect
+SPAN notes 8 prospect.txt,rinoa,trust,5,159,8,Prospect
+SPAN notes 8 prospect.txt,rook,anger,4,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,anticipation,2,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,disgust,3,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,fear,5,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,joy,1,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,sadness,4,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,surprise,4,200,8,Prospect
+SPAN notes 8 prospect.txt,rook,trust,6,200,8,Prospect
+SPAN notes 8 prospect.txt,xotl,anger,2,89,8,Prospect
+SPAN notes 8 prospect.txt,xotl,anticipation,2,89,8,Prospect
+SPAN notes 8 prospect.txt,xotl,disgust,2,89,8,Prospect
+SPAN notes 8 prospect.txt,xotl,fear,3,89,8,Prospect
+SPAN notes 8 prospect.txt,xotl,sadness,2,89,8,Prospect
+SPAN notes 8 prospect.txt,xotl,trust,2,89,8,Prospect
+SPAN notes 9 blutheim.txt,LT-031,anger,42,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,anticipation,54,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,disgust,15,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,fear,75,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,joy,28,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,sadness,29,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,surprise,21,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,LT-031,trust,66,3255,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,anger,8,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,anticipation,9,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,disgust,4,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,fear,5,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,joy,5,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,sadness,2,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,surprise,6,271,9,Blutheim
+SPAN notes 9 blutheim.txt,chibo,trust,8,271,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,anger,5,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,anticipation,3,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,disgust,1,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,fear,4,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,joy,1,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,sadness,2,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,surprise,1,77,9,Blutheim
+SPAN notes 9 blutheim.txt,dane,trust,2,77,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,anger,3,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,anticipation,2,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,disgust,1,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,fear,4,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,joy,1,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,sadness,2,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,surprise,1,128,9,Blutheim
+SPAN notes 9 blutheim.txt,evertonette,trust,3,128,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,anger,4,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,anticipation,8,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,disgust,1,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,fear,3,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,joy,5,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,sadness,3,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,surprise,4,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rinoa,trust,9,228,9,Blutheim
+SPAN notes 9 blutheim.txt,rook,anticipation,3,119,9,Blutheim
+SPAN notes 9 blutheim.txt,rook,fear,1,119,9,Blutheim
+SPAN notes 9 blutheim.txt,rook,joy,1,119,9,Blutheim
+SPAN notes 9 blutheim.txt,rook,surprise,1,119,9,Blutheim
+SPAN notes 9 blutheim.txt,rook,trust,4,119,9,Blutheim
+SPAN notes 9 blutheim.txt,xotl,anger,2,92,9,Blutheim
+SPAN notes 9 blutheim.txt,xotl,anticipation,1,92,9,Blutheim
+SPAN notes 9 blutheim.txt,xotl,fear,1,92,9,Blutheim
+SPAN notes 9 blutheim.txt,xotl,sadness,1,92,9,Blutheim
